@@ -1,0 +1,14 @@
+body {
+  margin: 0px;
+}
+
+header {
+  background: yellowgreen;
+}
+main {
+  background: pink;
+}
+footer {
+  background: blue;
+  color: white;
+}

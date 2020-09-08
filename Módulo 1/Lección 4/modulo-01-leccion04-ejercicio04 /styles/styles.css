@@ -1,0 +1,13 @@
+main {
+  background: pink;
+}
+
+.item {
+  background: chartreuse;
+}
+
+.columnas {
+  display: flex;
+  background: black;
+  flex-wrap: wrap;
+}

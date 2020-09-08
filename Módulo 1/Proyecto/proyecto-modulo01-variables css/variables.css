@@ -1,0 +1,35 @@
+:root {
+  /* colors opción 1*/
+  --header-background-color: #099d8d;
+  --header2-background-color: aqua;
+  --header-color: white;
+  --titles-color: #099d8d;
+  --second-titles-color: black;
+  --main-text-color: #54585a;
+  --buttons-color: #099d8d;
+  --text-details: aqua;
+
+  /* colors opción 2 */
+
+  --brand-first-color: #099d8d;
+  --brand-second-color: aqua;
+  --text-header-color: white;
+  --text-second-titles-color: black;
+  --main-text-color: #54585a;
+
+  /* tipografía y tamaños de letra */
+
+  --header-font-font-family: Rubik-Medium;
+  --titles-font-family: Rubik-Medium;
+  --main-text-font-family: OpenSans;
+}
+
+h1 {
+  background-color: var(--header-background-color);
+  color: var(--header-color);
+  font-family: var(--header-font);
+}
+p {
+  color: var(--text-main-color);
+  font-family: var(--main-text-font);
+}

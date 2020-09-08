@@ -1,0 +1,14 @@
+.container {
+  height: 100px;
+  background-color: lightskyblue;
+  border: rgb(238, 3, 42) solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+
+.item: {
+  background-color: yellow;
+}
