@@ -1,0 +1,22 @@
+:root {
+  /* colores */
+  --brand-first-color: #099d8d;
+  --brand-second-color: aqua;
+  --text-header-color: white;
+  --text-main-color: #54585a;
+
+  /* tipografía */
+
+  --titles-font-family: Rubik-Medium;
+  --main-text-font-family: OpenSans;
+}
+
+h1 {
+  background-color: var(--header-background-color);
+  color: var(--header-color);
+  font-family: var(--header-font);
+}
+p {
+  color: var(--text-main-color);
+  font-family: var(--main-text-font);
+}

@@ -1,0 +1,16 @@
+body {
+  background: lightcyan;
+}
+
+.aviso {
+  height: 100px;
+  width: 100%;
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1;
+}
