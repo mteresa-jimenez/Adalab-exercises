@@ -1,0 +1,7 @@
+.paragraph--hidden {
+  display: none;
+}
+
+.paragraph--visible {
+  display: block;
+}
