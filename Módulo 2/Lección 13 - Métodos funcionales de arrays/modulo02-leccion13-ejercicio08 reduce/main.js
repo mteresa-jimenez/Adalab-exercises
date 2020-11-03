@@ -7,3 +7,18 @@ const runners = [
   { name: "Cedric Diggory", time: 28 },
   { name: "Cho Chang", time: 35 },
 ];
+
+const winnerRunner = function (acc, runner) {
+  console.log("acc", acc);
+  console.log("runner", runner);
+
+  if (runner.time < acc.time) {
+    return runner;
+  } else {
+    return acc;
+  }
+};
+
+const winner = runners.reduce(winnerRunner);
+
+console.log(winner.name);
