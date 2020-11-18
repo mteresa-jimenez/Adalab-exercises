@@ -1,25 +1,32 @@
-import React, { Component } from "react";
+import React from "react";
 import Form from "./Form";
+import Card from "./Card";
 import "./App.css";
 
-class App extends Component {
-  constructor() {
-    super();
+class App extends React.Component {
+  constructor(props) {
+    super(props);
     this.state = {
-      name: "ii",
+      film: {},
     };
-
-    this.changeText = this.changeText.bind(this);
+    this.handleChangeFilm = this.handleChangeFilm.bind(this);
   }
 
-  changeText(event) {
-    this.setState({ name: event.current.value });
+  //1. Cambio estado con lo que manda el formulario y lo que envío a Card
+
+  handleChangeFilm(data) {
+    this.setState({ film: data });
+    console.log(data.value);
   }
 
   render() {
     return (
       <div className="App">
-        <Form handleChange={this.changeText} text={this.state.name} />
+        {/* 2. Envío la función que cambia el estado a form */}
+        <Form handleChangeFilm={this.handleChangeFilm} />
+
+        {/* Envío el estado con el objeto */}
+        <Card stateFilm={this.state.film} />
       </div>
     );
   }
